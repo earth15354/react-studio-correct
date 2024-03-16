@@ -1,9 +1,76 @@
 /* Add styling for your page here */
 
 .App {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    display: flex;
+    /* flex-direction: column; */
+    width: 100%;
+    max-width: 1280px;
+}
 
+.Main {
+    display: flex;
+    flex-direction: column;
+    width: 66.666667%;
+    padding: 1rem;
+}
+
+.Cart {
+    display: flex;
+    flex-direction: column;
+    width: 33.3333333%;
+    padding: 1rem;
 }
 
 .BakeryItem {
-  
+    --tw-bg-opacity: 1;
+    background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.Grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+
+.descriptors {
+    padding: 1rem;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-grow: 1;
+    flex: 1 1 0%;
+    display: flex;
+}
+
+.priceCart {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Items {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 40px;
+    padding: 5px;
+}
+h2 {
+    font-weight: normal;
+    font-size: 30px;
+    padding: 10px;
+    padding-top: 0px;
+    padding-left: 0px;
 }
